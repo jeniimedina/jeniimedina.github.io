@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Caratula</title>
+<body bgcolor="#FFCC66"> </bgcolor>
+<center><img src="enca.PNG" width="1050" height ="120"> </center>
+<center><table border="1" width="1060" height ="100"></center>
+<tr>
+<td><p align="left"><inputtype="date" ></td>
+<td rowspan="2">
+<center><font size="4"><fontface="tahoma"><strong>C</strong>olegio de <strong>E</strong>studios
+<strong>C</strong>ientíficos y <strong>T</strong>ecnológicos
+del <strong>E</strong>stado de <strong> M</strong>éxico </font></font><font size="4"><fontface="tahoma"><font
+size="4"><fontface="tahoma"> <strong>P</strong>lantel <strong>I</strong>xtlahuaca</font></font></center>
+
+
+<center><font size="3"><fontface="Monotype Corsiva "><font color="black"><strong>PORTAFOLIO DE EVIDENCIAS PRIMER
+PARCIAL</strong></center></font></font></font>
+<center><font size="4"><fontface="tahoma"><strong>Módulo lll:</strong> Desarrolla aplicaciones web</font></font>
+</center>
+<center><font size="4"><fontface="tahoma"><strong>Submódulo l:</strong> Construye páginas web</font></font>
+</center>
+<center><font size="4"><fontface="tahoma"><strong>Submódulo ll: </strong>Desarrolla aplicaciones que se ejecutan en
+el cliente</font></font></center>
+<center><font size="4"><fontface="tahoma"><strong>Submódulo lll: </strong>Desarrolla aplicaciones que se ejecutan en
+el servidor</font></font></center>
+<center><font size="4"><fontface="tahoma"><strong>Alumna:</strong> Daniela Iniestra de Jesus.</font></font>
+</center>
+<center><font size="4"><fontface="tahoma"><strong>Docente:</strong> Celia Romero Pichardo.</font></font>
+</center>
+<center><font size="4"><fontface="tahoma"><strong>N.L.14.</strong></font></font></center>
+<center><font size="4"><fontface="tahoma"><strong>Grupo 404.</strong></font></font></center>
+<center><font size="4"><fontface="tahoma"><strong>Ciclo escolar:</strong> febrero 2024-julio 2024.</font></font>
+</center>
+<p align="right"><font size="3"><fontface="tahoma"><strong>Fecha:</strong> 26 de febrero de 2024</font>
+</font></p>
+</rowspan>
+</td>
+</tr>
+<td>
+
+<br> 
+<p align="left"><a href="file:///C:/Users/Hp/OneDrive/Escritorio/13_Daniela/cecytem2.html"><img src="ce.PNG" width="190" height ="45"><p align="left">
+<p align="left"><a href="file:///C:/Users/Hp/OneDrive/Escritorio/13_Daniela/historia.html"><img src="bos.PNG" width="190" height ="45"><p align="left"><a
+<a href="file:///C:/Users/Hp/OneDrive/Escritorio/13_Daniela/Vicion.html"><img src="oj.PNG" width="190" height ="45">
+<p align="left"><a href="file:///C:/Users/Hp/OneDrive/Escritorio/13_Daniela/organigrama.html"><img src="organis.PNG" width="190" height ="45"><p align="left"><a
+href="file:///C:/Users/Hp/OneDrive/Escritorio/13_Daniela/mision.html"><img src="mis.PNG" width="190" height ="45"> 
+</br></p></td>
+<center><td><input type = "date"/></center>
+<script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta pagina el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"#FF0000\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script>
+
+
+<center>
+                        <body>
+                            <h2>Iniciar Sesión</h2>
+                            <form id="loginForm">
+                                <label for="username" onfocus="this.value=''">Usuario:</label><br>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="password" onfocus="this.value=''">Contraseña:</label><br>
+                                <input type="password" id="password" name="password"><br><br>
+                                <button type="submit">Iniciar Sesión</button>
+					   <input type="reset" value="LIMPIAR" onclick="username ,password"()"></br></center>
+
+                            </form>
+                        
+                            <script>
+                                // Datos de usuario
+                                const usuarioCorrecto ="Dani"
+                                const contraseñaCorrecta = "123";
+                        
+                                // Función para verificar el inicio de sesión
+                                function verificarInicioSesion(event) {
+                                    event.preventDefault(); // Evita que el formulario se envíe
+                        
+                                    // Obtener los valores de usuario y contraseña
+                                    const usuario = document.getElementById("username").value;
+                                    const contraseña = document.getElementById("password").value;
+                        
+                                    // Verificar la autenticación
+                                    if (usuario === usuarioCorrecto && contraseña === contraseñaCorrecta) {
+                                        alert("Felicidades has iniciado seción");
+                                        // Redirigir al usuario a otra página
+                                        window.location.href = "area.html"; // Cambia "pagina_de_bienvenida.html" por la URL de la página a la que deseas redirigir al usuario
+                                    } else {
+                                        alert("Usuario o contraseña incorrectos.Intentelo nuevamente.");
+                                    }
+                                }
+                        
+                                // Agregar el evento de escucha para el envío del formulario
+                                document.getElementById("loginForm").addEventListener("submit", verificarInicioSesion);
+                            </script>
+                        </body></center>
+
+
+
+</td>
+</table>
+<center><img src="grec.png" width ="1050" height ="40"></br></center>
+
+</html>
+</head>

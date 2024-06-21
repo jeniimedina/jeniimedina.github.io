@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<?php
+include("conexion.php");
+?>
+
+
+<form action=""  method="post">
+    folio: <input required name="fol"><br>
+    nombre: <input name="nom"><br>
+    a_p: <input name="pass"><br>
+    password: <input name="pass"><br>
+    <input type="submit">
+</form>
+
+
+<?php
+if($_post){ 
+   $f=$_POST['fol'];
+   $n=$_POST['nom'];
+   $a=$_POST['a_p'];
+   $p=$_POST['pass];
+
+  $sql=("insert into médicos(folio,nombre,a_p,password)values('$f','$n','$a','$p')")or die(mysql_error());
+  if(mysql_query($con,$sql)){
+  echo"<script>
+           alert('el registro se guardo correctamente');
+          </script>
+}
+else{
+  echo"<script>
+   alert('el elumno ya existe en la base de datos y no se puede dar de alta');
+    </script>";
+}
+}
+?>
