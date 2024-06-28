@@ -1,0 +1,61 @@
+<html> 
+<head>
+<title> Terreno de luis </title> 
+</head>
+<body>
+<center><img src="Logos1.png"></center><br>
+<center><p><font color="black" size="tahoma" face="4"><strong>Nombre:</strong>Jennifer Medina de la Cruz<strong>Grupo:</strong> 404<strong>Numero de lista</strong>20    <strong>Fecha</strong>12/03/2024 <strong> Hora</strong> 12:35 </font></p></center>
+<script>
+function multiplicacion(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+var n3= parseFloat(document.MyForm.txtNumero3.value);
+
+document.MyForm.txtResultado.value=n1*n2*n3/n3;
+}
+</script>
+
+
+
+
+
+
+
+</body>
+<center><table width="1000" border="1">
+<form name="MyForm">
+<tr>
+<td width="300"><label>Dame la base :</label></td>
+<td width="300"><input type="text" name="txtNumero1"></td>
+<td width="200" rowspan="4"><img src="terreno1.jpeg"></td>
+</tr>
+
+<tr>
+<td><label>Dame la altura:</label></td>
+<td><input type="text" name="txtNumero2"></td>
+</tr>
+
+<tr>
+<td><label>Dame grosor:</label></td>
+<td><input type="text" name="txtNumero3"></td>
+</tr>
+
+
+
+<tr>
+<td><label>Mostrar Resultado:</label></td>
+<td><input type="text" name="txtResultado"></td>
+</tr>
+<tr>
+<td colspan="2" aling="center"><input type="button" value="multiplicacion" onclick="multiplicacion()"</td>
+
+</tr>
+<table border="1">
+
+</tr>
+</form>
+</table>
+</body>
+<img src="pie.png">
+</body>
+</html>
